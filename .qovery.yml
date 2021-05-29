@@ -18,12 +18,4 @@ domain: "www.v2rm.com"
 
 
 
-routers:
-- name: "main-minisrv"
-  custom_domains:
-  - branch: "main"
-    domain: "test.youbbs.org"
-  routes:
-  - application_name: "minisrv"
-    paths:
-    - "/*"
+
