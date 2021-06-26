@@ -1,21 +1,22 @@
----
+
 application:
-  name: "gyb"
-  project: "gyb"
-  organization: "QoveryCommunity"
+  name: "v2rm"
+  project: "v2rm"
+  organization: "not rebots forum"
   storage:
   - name: "images"
-    size: "100"
-    type: "ssd"
+    size: "1000"
+    type: "sdd"
     mount_point: "/mnt/images"
 routers:
-- name: "main-gyb"
-domain: "www.v2rm.com"
+- name: "main-minisrv"
+  custom_domains:
+  - branch: "main"
+    domain: "www.v2rm.com"
   routes:
-  - application_name: "gyb"
+  - application_name: "v2rm"
     paths:
     - "/*"
-
 
 
 
