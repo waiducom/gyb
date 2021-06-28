@@ -1,22 +1,19 @@
-
 application:
   name: "v2rm"
   project: "v2rm"
-  organization: "not rebots forum"
+  organization: "not robots fourm"
   storage:
-  - name: "images"
+  - name: "data"
     size: "1000"
     type: "sdd"
-    mount_point: "/mnt/images"
+    mount_point: "/mnt/data"
 routers:
-- name: "main-minisrv"
+- name: "main-data"
   custom_domains:
   - branch: "main"
     domain: "www.v2rm.com"
   routes:
-  - application_name: "v2rm"
+  - application_name: "data"
     paths:
     - "/*"
-
-
 
